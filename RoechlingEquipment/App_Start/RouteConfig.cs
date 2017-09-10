@@ -19,9 +19,14 @@ namespace RoechlingEquipment
             //  url: "{controller}/{action}/{id}",
             //  defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional });
             routes.MapRoute(
+               name: "LoginPage",
+               url: "login.html",
+               defaults: new { controller = "Login", action = "LoginPage" });
+
+            routes.MapRoute(
                name: "Default",
-               url: "{culture}/login.html",
-               defaults: new { culture = CultureHelper.GetDefaultCulture(), controller = "Home", action = "LoginPage" });
+               url: "{culture}/index.html",
+               defaults: new { culture = CultureHelper.GetDefaultCulture(), controller = "Home", action = "Index" });
         }
     }
 }

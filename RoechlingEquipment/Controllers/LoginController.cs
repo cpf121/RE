@@ -8,16 +8,14 @@ using System.Web.Mvc;
 
 namespace RoechlingEquipment.Controllers
 {
-    public class HomeController : BaseController
+    public class LoginController : Controller
     {
-        public ActionResult Index()
+    
+        public ActionResult LoginPage()
         {
-            return View();
-        }
-
-
-        public ActionResult Demo()
-        {
+            // Validate input
+            var workNo = string.Empty;
+            //HomeBusiness.UserLogin("", "", "", out workNo);
             return View();
         }
 
