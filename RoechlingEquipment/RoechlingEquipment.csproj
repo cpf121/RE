@@ -15,7 +15,7 @@
     <AssemblyName>RoechlingEquipment</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -360,6 +360,10 @@
       <Project>{cff99e6b-9d1f-4c42-b040-16ce8b0f856c}</Project>
       <Name>Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{2f4684b7-50a1-4ae2-882f-c28239fce44a}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.csproj">
       <Project>{622c6ffb-a19c-4809-b365-96f38c833a16}</Project>
       <Name>Resources</Name>
@@ -410,7 +414,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1931/</IISUrl>
+          <IISUrl>http://localhost/RoechlingEquipment</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
