@@ -115,6 +115,7 @@
   <ItemGroup>
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -353,7 +354,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\LoginPage.cshtml" />
+    <Content Include="Views\Login\LoginPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
@@ -395,6 +396,12 @@
     <Content Include="Content\assets\vendor\skycons\fonts\weathericons-regular-webfont.ttf" />
     <Content Include="Content\assets\vendor\skycons\fonts\weathericons-regular-webfont.woff" />
     <Content Include="Content\assets\vendor\skycons\fonts\WeatherIcons-Regular.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

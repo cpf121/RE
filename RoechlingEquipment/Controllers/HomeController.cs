@@ -22,12 +22,6 @@ namespace RoechlingEquipment.Controllers
             return View();
         }
 
-        public ActionResult LoginPage()
-        {
-            // Validate input
-            var workNo = string.Empty;
-            HomeBusiness.UserLogin("", "", "", out workNo);
-            return View();
         }
 
         public ActionResult Login(LoginModel model)
@@ -49,7 +43,5 @@ namespace RoechlingEquipment.Controllers
                 msg = ex.Message;
             }
             return Json(new { Message = msg, Success = success });
-        }
-
     }
 }
