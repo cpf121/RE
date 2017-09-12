@@ -22,7 +22,9 @@ namespace RoechlingEquipment
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
 
-     
-
+        //protected void Application_BeginRequest(object sender, EventArgs e)
+        //{
+        //    if (Context.Request.FilePath == "/") Context.RewritePath("zh-CN/login.html");
+        //}
     }
 }
