@@ -1,5 +1,6 @@
 ﻿
 using Business;
+using Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,9 @@ using System.Web.Mvc;
 
 namespace RoechlingEquipment.Controllers
 {
-    public class LoginController : Controller
+    public class LoginController : UrlController
     {
-    
+
         public ActionResult LoginPage()
         {
             // Validate input
